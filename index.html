@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+  
+	<link href="body_bg.css" type="text/css" rel="stylesheet" />
+
+
+  <title>Художник с фотоаппаратом Сеня Удалова</title>
+
+
+</head>
+
+<body onload="_l='t';">
+
+  <script src="jquery-2.0.0.js"></script>
+  <script src="jquery.mousewheel.js"></script>
+
+
+
+<a class="url" href="http://vk.com/public64461706">
+	<img src="vk.png" alt="" />
+</a>
+
+<div class="url_text">
+<img src="phone.png"  styke="cursor: pointer;" alt="" onclick="showText();" />
+</div>
+
+
+
+
+
+
+
+<div id="text" class="text">
+
+<p style="padding: 10px; margin: 10px;" id="text">Художник с фотоаппаратом<br/>
+Сеня Удалова<br/>
++7 952 229 - 43 - 06
+</p>
+
+</div>
+
+
+
+<div id="body_bg_div" class="body_bg_4"></div>
+<!-- <div  class="border"></div> -->
+
+<img src="img/6.jpg" alt="" class="box_2" onclick="clickDown();"/>
+
+<img src="img/5.jpg" alt="" class="box_3" onclick="clickDown();"/>
+<img src="img/4.jpg" alt="" class="box_4" onclick="clickDown();"/>
+<img src="img/3.jpg" alt="" class="box_5" onclick="clickDown();"/>
+
+<img src="img/2.jpg" alt="" class="box_6" onclick="clickDown();"/>
+
+
+<img src="img/7.jpg" alt="" class="box_1" onclick="clickDown();"/>
+<img src="img/1.jpg" alt="" class="box_7" onclick="clickDown();"/>
+
+
+
+
+  <script>
+  
+  
+var photo_count = 44;
+  
+
+// disable scroll  
+
+  
+var boxOne = document.getElementsByClassName('box_4')[0];
+var box1 = document.getElementsByClassName('box_1')[0];
+var box2 = document.getElementsByClassName('box_2')[0];
+var box3 = document.getElementsByClassName('box_3')[0];
+var box4 = document.getElementsByClassName('box_5')[0];
+var box5 = document.getElementsByClassName('box_6')[0];
+var box6 = document.getElementsByClassName('box_7')[0];
+var body = document.getElementById('body_bg_div');
+
+var count = 7000;
+var count_img = photo_count * 1000;
+var lastTime = 0;
+var prevBodyStayle = 4;
+
+
+function hideText() {
+			$('#text').fadeTo(250, 0, function()  
+    {  
+    		 
+			
+    		 
+    });
+}
+
+function showText() {
+		$('#text').fadeTo(250, 0.8, function()  
+    {  
+    		 
+			
+    		 
+    });
+}
+  
+function clickDown(){
+
+hideText();
+
+var d = new Date();
+var n = d.getTime();
+
+if((n - lastTime) > 500){
+lastTime = n;
+scrollDown();
+}
+}
+
+
+function scrollDown(){
+
+
+    boxOne.classList.remove('box_' + ((count + 3 + 7)%7 + 1));
+    boxOne.classList.add('box_' + ((count + 4 + 7)%7 +1));
+    
+    box1.classList.remove('box_' + ((count + 0 + 7)%7 + 1));
+    box1.classList.add('box_' + ((count + 1 + 7)%7 + 1));
+    
+    box2.classList.remove('box_' + ((count + 1 + 7)%7 + 1));
+    box2.classList.add('box_' + ((count + 2 + 7)%7 + 1));
+    
+    box3.classList.remove('box_' + ((count + 2 + 7)%7 + 1));
+    box3.classList.add('box_' + ((count + 3 + 7)%7 + 1));
+    
+    box4.classList.remove('box_' + ((count + 4 + 7)%7+ 1));
+    box4.classList.add('box_' + ((count + 5 +  7)%7 + 1)); 
+    
+    box5.classList.remove('box_' + ((count + 5 + 7)%7+ 1));
+    box5.classList.add('box_' + ((count + 6 +  7)%7 + 1)); 
+    
+    box6.classList.remove('box_' + ((count + 6 + 7)%7+ 1));
+    box6.classList.add('box_' + ((count + 0 +  7)%7 + 1));     
+    
+    
+    document.getElementsByClassName('box_1')[0].src="img/" + ((count_img + 8)%photo_count) + ".jpg";     // box_1, on top
+    
+    
+var displayed_photo = ((count_img + 5)%photo_count);    
+    
+	
+	
+	$('#body_bg_div').fadeTo(250, 0, function()  
+    {  
+        	 body.classList.remove("body_bg_" + prevBodyStayle);
+    		 body.classList.add("body_bg_" + displayed_photo);   
+    		 prevBodyStayle = displayed_photo; 
+    		 
+    		 	$('#body_bg_div').fadeTo(250, 0.4, function()  
+    {  
+     		 
+    });
+    		 
+    });
+	 
+   
+       
+    count++;
+    count_img++;
+
+}
+
+
+
+
+
+$('body').on('mousewheel', function(event) {
+
+hideText();
+
+var d = new Date();
+var n = d.getTime();
+
+if((n - lastTime) > 500){
+lastTime = n;
+
+	
+
+
+if(event.deltaY > 0){
+
+scrollDown();
+    }    	
+    
+    if(event.deltaY < 0){
+    
+      boxOne.classList.remove('box_' + ((count + 3 + 7)%7 + 1));
+    boxOne.classList.add('box_' + ((count + 2 + 7)%7 +1));
+    
+    box1.classList.remove('box_' + ((count + 0 + 7)%7 + 1));
+    box1.classList.add('box_' + ((count + 6 + 7)%7 + 1));
+    
+    box2.classList.remove('box_' + ((count + 1 + 7)%7 + 1));
+    box2.classList.add('box_' + ((count + 0 + 7)%7 + 1));
+    
+    box3.classList.remove('box_' + ((count + 2 + 7)%7 + 1));
+    box3.classList.add('box_' + ((count + 1 + 7)%7 + 1));
+    
+    box4.classList.remove('box_' + ((count + 4 + 7)%7+ 1));
+    box4.classList.add('box_' + ((count + 3 +  7)%7 + 1)); 
+    
+    box5.classList.remove('box_' + ((count + 5 + 7)%7+ 1));
+    box5.classList.add('box_' + ((count + 4 +  7)%7 + 1)); 
+    
+    box6.classList.remove('box_' + ((count + 6 + 7)%7+ 1));
+    box6.classList.add('box_' + ((count + 5 +  7)%7 + 1));  
+    
+    
+    
+    
+    
+    document.getElementsByClassName('box_7')[0].src="img/" + ((count_img)%photo_count)+".jpg";     // box_7, on top
+    
+    
+    var displayed_photo = ((count_img + 3)%photo_count);
+	 
+	 //console.log(prevBodyStayle, displayed_photo);
+	$('#body_bg_div').fadeTo(250, 0, function()  
+    {  
+        	 body.classList.remove("body_bg_" + prevBodyStayle);
+    		 body.classList.add("body_bg_" + displayed_photo);   
+    		 prevBodyStayle = displayed_photo; 
+    		 
+    		 	$('#body_bg_div').fadeTo(250, 0.4, function()  
+    {  
+     		 
+    });
+    		 
+    });
+	 
+
+
+    
+    count--;
+    count_img--;
+    }
+}
+    
+		
+});
+                
+
+
+
+  </script>
+
+  <script>
+    // Once the entire pen's loaded we send a message to embeds
+    // to resize again in case they're using auto to the size the embed
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage('resize', "*");
+    }
+  </script>
+
+</body>
+
+</html>

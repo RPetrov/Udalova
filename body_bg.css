@@ -1,0 +1,1399 @@
+body {
+    overflow:hidden;
+}
+
+.url{
+	left: 30px;
+	height: 48px;
+  width: 48px;
+  top:50%;
+  margin-top: -48px;
+  position: absolute;
+	z-index:100;
+}
+
+.url_text{
+	left: 30px;
+	height: 48px;
+   width: 48px;
+   top:50%;
+   margin-top: 0px;
+   position: absolute;
+	z-index:100;
+	cursor: pointer;
+}
+
+.text{
+	
+
+	left: 30px;
+  position: relative;  
+  width: 20%;
+  top:50%;
+  margin-top: 50px;
+  position: absolute;
+  z-index:100;
+	background-color: #ffffff;  
+  
+  opacity: 0.0;
+
+  
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
+  
+padding: 2px;
+border: 1px solid #000000;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);  
+  
+}
+
+
+.border{
+	
+  height: 600px;
+  width: 900px;
+  left:50%; 
+  top:50%;
+  margin-top: -300px;
+  margin-left: -25%;
+  position: absolute;
+z-index:99;
+	
+padding: 2px;
+background: #00ffffff;
+border: 1px solid #000000;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+}
+
+.box_4 {
+  height: 600px;
+  width: 900px;
+  left:50%; 
+  top:50%;
+  margin-top: -300px;
+  margin-left: -25%;
+  position: absolute;
+z-index:100;
+
+
+
+   -moz-transform: rotate(0deg); /* Для Firefox */
+    -ms-transform: rotate(0deg); /* Для IE */
+    -webkit-transform: rotate(0deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(0deg); /* Для Opera */
+    transform: rotate(0deg); 
+
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  
+}
+
+
+.box_1 {
+	
+  height: 600px;
+  width: 900px;
+  top: -100%;
+  left: 50%; 
+  margin-top: -300px;
+  margin-left: -300px;
+   -moz-transform: rotate(30deg); /* Для Firefox */
+    -ms-transform: rotate(30deg); /* Для IE */
+    -webkit-transform: rotate(30deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(30deg); /* Для Opera */
+    transform: rotate(30deg); 
+  position: absolute;
+z-index:50;
+zoom: 1;
+	filter: alpha(opacity=40);
+	opacity: 0.0;
+	
+
+  
+}
+
+.box_2 {
+	
+  height: 600px;
+  width: 900px;
+  top: -50%;
+  left: 50%; 
+  margin-top: -300px;
+  margin-left: -300px;
+   -moz-transform: rotate(30deg); /* Для Firefox */
+    -ms-transform: rotate(30deg); /* Для IE */
+    -webkit-transform: rotate(30deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(30deg); /* Для Opera */
+    transform: rotate(30deg); 
+  position: absolute;
+z-index:50;
+zoom: 1;
+	filter: alpha(opacity=40);
+	opacity: 0.4;
+	
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  
+}
+
+.box_3 {
+	
+  height: 600px;
+  width: 900px;
+  top: 0%;
+  left:50%; 
+  margin-top: -300px;
+  margin-left: -300px;
+   -moz-transform: rotate(15deg); /* Для Firefox */
+    -ms-transform: rotate(15deg); /* Для IE */
+    -webkit-transform: rotate(15deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(15deg); /* Для Opera */
+    transform: rotate(15deg); 
+  position: absolute;
+z-index:50;
+zoom: 1;
+	filter: alpha(opacity=40);
+	opacity: 0.4;
+	
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  
+}
+
+.box_5 {
+	z-index:25;
+  height: 600px;
+  width: 900px;
+  top: 100%;
+  left:50%; 
+  margin-top: -300px;
+  margin-left: -300px;
+   -moz-transform: rotate(-15deg); /* Для Firefox */
+    -ms-transform: rotate(-15deg); /* Для IE */
+    -webkit-transform: rotate(-15deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-15deg); /* Для Opera */
+    transform: rotate(-15deg); 
+  position: absolute;
+zoom: 1;
+	filter: alpha(opacity=40);
+	opacity: 0.4;
+	
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  
+}
+
+.box_6 {
+	z-index:20;
+  height: 600px;
+  width: 900px;
+  top: 150%;
+  left:50%; 
+  margin-top: -300px;
+  margin-left: -300px;
+   -moz-transform: rotate(-30deg); /* Для Firefox */
+    -ms-transform: rotate(-30deg); /* Для IE */
+    -webkit-transform: rotate(-30deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-30deg); /* Для Opera */
+    transform: rotate(-30deg); 
+  position: absolute;
+zoom: 1;
+	filter: alpha(opacity=40);
+	opacity: 0.4;
+	
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  
+}
+
+.box_7 {
+	
+  height: 600px;
+  width: 900px;
+  top: 200%;
+  left:50%; 
+  margin-top: -300px;
+  margin-left: -300px;
+   -moz-transform: rotate(-30deg); /* Для Firefox */
+    -ms-transform: rotate(-30deg); /* Для IE */
+    -webkit-transform: rotate(-30deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-30deg); /* Для Opera */
+    transform: rotate(-30deg); 
+  position: absolute;
+zoom: 1;
+	filter: alpha(opacity=40);
+	opacity: 0.0;
+	
+  
+}
+
+
+.body_zero_opacity{
+	 opacity: 0;
+}
+
+.body_bg_0{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/0.jpg);
+  
+}
+
+
+
+.body_bg_1{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/1.jpg);
+  
+}
+
+
+
+.body_bg_2{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/2.jpg);
+  
+}
+
+
+
+.body_bg_3{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/3.jpg);
+  
+}
+
+
+
+.body_bg_4{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  opacity: 0.3;
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/4.jpg);
+  
+}
+
+
+
+.body_bg_5{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/5.jpg);
+  
+}
+
+
+
+.body_bg_6{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/6.jpg);
+  
+}
+
+
+
+.body_bg_7{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/7.jpg);
+  
+}
+
+
+
+.body_bg_8{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/8.jpg);
+  
+}
+
+
+
+.body_bg_9{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/9.jpg);
+  
+}
+
+
+
+.body_bg_10{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/10.jpg);
+  
+}
+
+
+
+.body_bg_11{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/11.jpg);
+  
+}
+
+
+
+.body_bg_12{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/12.jpg);
+  
+}
+
+
+
+.body_bg_13{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/13.jpg);
+  
+}
+
+
+
+.body_bg_14{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/14.jpg);
+  
+}
+
+
+
+.body_bg_15{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/15.jpg);
+  
+}
+
+
+
+.body_bg_16{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/16.jpg);
+  
+}
+
+
+
+.body_bg_17{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/17.jpg);
+  
+}
+
+
+
+.body_bg_18{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/18.jpg);
+  
+}
+
+
+
+.body_bg_19{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/19.jpg);
+  
+}
+
+
+
+.body_bg_20{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/20.jpg);
+  
+}
+
+
+
+.body_bg_21{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/21.jpg);
+  
+}
+
+
+
+.body_bg_22{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/22.jpg);
+  
+}
+
+
+
+.body_bg_23{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/23.jpg);
+  
+}
+
+
+
+.body_bg_24{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/24.jpg);
+  
+}
+
+
+
+.body_bg_25{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/25.jpg);
+  
+}
+
+
+
+.body_bg_26{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/26.jpg);
+  
+}
+
+
+
+.body_bg_27{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/27.jpg);
+  
+}
+
+
+
+.body_bg_28{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/28.jpg);
+  
+}
+
+
+
+.body_bg_29{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/29.jpg);
+  
+}
+
+
+
+.body_bg_30{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/30.jpg);
+  
+}
+
+
+
+.body_bg_31{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/31.jpg);
+  
+}
+
+
+
+.body_bg_32{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/32.jpg);
+  
+}
+
+
+
+.body_bg_33{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/33.jpg);
+  
+}
+
+
+
+.body_bg_34{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/34.jpg);
+  
+}
+
+
+
+.body_bg_35{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/35.jpg);
+  
+}
+
+
+
+.body_bg_36{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/36.jpg);
+  
+}
+
+
+
+.body_bg_37{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/37.jpg);
+  
+}
+
+
+
+.body_bg_38{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/38.jpg);
+  
+}
+
+
+
+.body_bg_39{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/39.jpg);
+  
+}
+
+
+
+.body_bg_40{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/40.jpg);
+  
+}
+
+
+
+.body_bg_41{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/41.jpg);
+  
+}
+
+
+
+.body_bg_42{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/42.jpg);
+  
+}
+
+
+
+.body_bg_43{
+	
+ z-index: 1;
+ position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow-x: hidden;
+    
+background-size:100% 100%;
+ 
+  
+-webkit-transition: background-image 1s ease-in-out;
+-moz-transition: background-image 1s ease-in-out;
+-ms-transition: background-image 1s ease-in-out;
+-o-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
+   
+
+	background-image: url(img_bg/43.jpg);
+  
+}
+
+
+
