@@ -255,6 +255,30 @@ scrollDown();
     
 		
 });
+
+
+$(document).keydown(function(e){
+
+var d = new Date();
+var n = d.getTime();
+
+if((n - lastTime) > 500){
+lastTime = n;
+
+    if (e.keyCode == 37) { // 37 - left
+        scrollUp();
+    }
+        if (e.keyCode == 38) { // 38 - up
+        scrollDown();
+    }
+        if (e.keyCode == 39) { // 39 - right
+         scrollDown();
+    }
+        if (e.keyCode == 40) { // 40 - down
+        scrollUp();
+    }
+    }
+});
                 
 
 
