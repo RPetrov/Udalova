@@ -9,7 +9,7 @@
     <meta name="keywords" content="Ксения Удалова, Сеня Удалова, Сеня, Художник с фотоаппаратом Сеня Удалова">
 
     <link href="body_bg.css" type="text/css" rel="stylesheet"/>
-
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <title>Художник с фотоаппаратом Сеня Удалова</title>
 
@@ -22,8 +22,13 @@
 <script src="jquery.mousewheel.js"></script>
 
 
-
 <div class="menu">
+
+    <p  class="menu_item" style="font-size: 26px;">Сеня Удалова</p>
+    <p  class="menu_item" style="font-size: 16px;">Художник с фотоаппаратом</p>
+
+    <p  class="menu_item" style="font-size: 26px;">Сеня Удалова</p>
+
 
 </div>
 
@@ -46,14 +51,14 @@
 
 
 <script>
-  
-  
+
+
 var photo_count = 44;
-  
 
-// disable scroll  
 
-  
+// disable scroll
+
+
 var boxOne = document.getElementsByClassName('box_4')[0];
 var box1 = document.getElementsByClassName('box_1')[0];
 var box2 = document.getElementsByClassName('box_2')[0];
@@ -70,23 +75,23 @@ var prevBodyStayle = 4;
 
 
 function hideText() {
-			$('#text').fadeTo(250, 0, function()  
-    {  
-    		 
-			
-    		 
+			$('#text').fadeTo(250, 0, function()
+    {
+
+
+
     });
 }
 
 function showText() {
-		$('#text').fadeTo(250, 0.8, function()  
-    {  
-    		 
-			
-    		 
+		$('#text').fadeTo(250, 0.8, function()
+    {
+
+
+
     });
 }
-  
+
 function clickDown(){
 
 hideText();
@@ -106,48 +111,48 @@ function scrollDown(){
 
     boxOne.classList.remove('box_' + ((count + 3 + 7)%7 + 1));
     boxOne.classList.add('box_' + ((count + 4 + 7)%7 +1));
-    
+
     box1.classList.remove('box_' + ((count + 0 + 7)%7 + 1));
     box1.classList.add('box_' + ((count + 1 + 7)%7 + 1));
-    
+
     box2.classList.remove('box_' + ((count + 1 + 7)%7 + 1));
     box2.classList.add('box_' + ((count + 2 + 7)%7 + 1));
-    
+
     box3.classList.remove('box_' + ((count + 2 + 7)%7 + 1));
     box3.classList.add('box_' + ((count + 3 + 7)%7 + 1));
-    
+
     box4.classList.remove('box_' + ((count + 4 + 7)%7+ 1));
-    box4.classList.add('box_' + ((count + 5 +  7)%7 + 1)); 
-    
+    box4.classList.add('box_' + ((count + 5 +  7)%7 + 1));
+
     box5.classList.remove('box_' + ((count + 5 + 7)%7+ 1));
-    box5.classList.add('box_' + ((count + 6 +  7)%7 + 1)); 
-    
+    box5.classList.add('box_' + ((count + 6 +  7)%7 + 1));
+
     box6.classList.remove('box_' + ((count + 6 + 7)%7+ 1));
-    box6.classList.add('box_' + ((count + 0 +  7)%7 + 1));     
-    
-    
+    box6.classList.add('box_' + ((count + 0 +  7)%7 + 1));
+
+
     document.getElementsByClassName('box_1')[0].src="img/" + ((count_img + 8)%photo_count) + ".jpg";     // box_1, on top
-    
-    
-var displayed_photo = ((count_img + 5)%photo_count);    
-    
-	
-	
-	$('#body_bg_div').fadeTo(250, 0, function()  
-    {  
+
+
+var displayed_photo = ((count_img + 5)%photo_count);
+
+
+
+	$('#body_bg_div').fadeTo(250, 0, function()
+    {
         	 body.classList.remove("body_bg_" + prevBodyStayle);
-    		 body.classList.add("body_bg_" + displayed_photo);   
-    		 prevBodyStayle = displayed_photo; 
-    		 
-    		 	$('#body_bg_div').fadeTo(250, 0.4, function()  
-    {  
-     		 
+    		 body.classList.add("body_bg_" + displayed_photo);
+    		 prevBodyStayle = displayed_photo;
+
+    		 	$('#body_bg_div').fadeTo(250, 0.4, function()
+    {
+
     });
-    		 
+
     });
-	 
-   
-       
+
+
+
     count++;
     count_img++;
 
@@ -218,21 +223,21 @@ var n = d.getTime();
 if((n - lastTime) > 500){
 lastTime = n;
 
-	
+
 
 
 if(event.deltaY > 0){
 
 scrollDown();
-    }    	
-    
+    }
+
     if(event.deltaY < 0){
     scrollUp();
 
     }
 }
-    
-		
+
+
 });
 
 
@@ -258,7 +263,7 @@ lastTime = n;
     }
     }
 });
-                
+
 
 
 
