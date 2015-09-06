@@ -42,14 +42,14 @@ margin: 0px;
 }
 
 .menu_item{
-
+text-decoration: none;
 color: #ffffff;
 text-align: center;
 font-family: 'Comfortaa', cursive;
 }
 
 .menu_item:hover{
-
+text-decoration: none;
 color: #dddddd;
 text-align: center;
 font-family: 'Comfortaa', cursive;
