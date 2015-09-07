@@ -22,7 +22,9 @@
 
 <body onload="_l='t';">
 
-
+<iframe id="blog_frame" style="position: relative; left: 200px; display: none" src="http://blog.udalova.info/blog_wp/" width="100%" height="100%" align="left">
+    Ваш браузер не поддерживается!
+</iframe>
 
 
 <div class="menu">
@@ -34,7 +36,7 @@
 
 
     <ul class="off-canvas-list">
-        <li><a href="#" style="font-size: 22px; " class="menu_item">Блог</a></li>
+        <li><a href="#" style="font-size: 22px; " class="menu_item" onclick="showBlog();">Блог</a></li>
         <li><a href="#" style="font-size: 22px; " class="menu_item">Живопись</a></li>
 
         <li><a href="#" style="font-size: 22px; "  class="off-canvas-submenu-call menu_item" >Портфолио <span class="right"> + </span></a></li>
@@ -66,19 +68,22 @@
 
 
 <div id="body_bg_div" class="body_bg"></div>
+<div id="photos">
+    <img src="img/6.jpg" alt="" class="box_2" onclick="clickDown();"/>
+
+    <img src="img/5.jpg" alt="" class="box_3" onclick="clickDown();"/>
+    <img src="img/4.jpg" alt="" class="box_4" onclick="clickDown();"/>
+    <img src="img/3.jpg" alt="" class="box_5" onclick="clickDown();"/>
+
+    <img src="img/2.jpg" alt="" class="box_6" onclick="clickDown();"/>
+
+
+    <img src="img/7.jpg" alt="" class="box_1" onclick="clickDown();"/>
+    <img src="img/1.jpg" alt="" class="box_7" onclick="clickDown();"/>
+</div>
 <!-- <div  class="border"></div> -->
 
-<img src="img/6.jpg" alt="" class="box_2" onclick="clickDown();"/>
 
-<img src="img/5.jpg" alt="" class="box_3" onclick="clickDown();"/>
-<img src="img/4.jpg" alt="" class="box_4" onclick="clickDown();"/>
-<img src="img/3.jpg" alt="" class="box_5" onclick="clickDown();"/>
-
-<img src="img/2.jpg" alt="" class="box_6" onclick="clickDown();"/>
-
-
-<img src="img/7.jpg" alt="" class="box_1" onclick="clickDown();"/>
-<img src="img/1.jpg" alt="" class="box_7" onclick="clickDown();"/>
 
 <script src="js/vendor/jquery.js"></script>
 <!--<script src="jquery-2.0.0.js"></script>-->
@@ -119,6 +124,7 @@ var prevBodyStayle = 4;
 
 
 function selectFolder(path) {
+hideBlock();
     folderSuffix = path;
 prevBodyStayle = 4;
 
@@ -146,6 +152,21 @@ lastTime = n;
 scrollDown();
 }
 }
+
+
+function showBlog(){
+    document.getElementById('photos').style.display = "none";
+    document.getElementById('body_bg_div').style.display = "none";
+    document.getElementById('blog_frame').style.display = "block";
+}
+
+function hideBlock(){
+    document.getElementById('photos').style.display = "block";
+    document.getElementById('body_bg_div').style.display = "block";
+    document.getElementById('blog_frame').style.display = "none";
+}
+
+
 
 
 function scrollDown(){
