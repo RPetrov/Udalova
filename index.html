@@ -27,9 +27,9 @@
 
 <div class="menu">
 
-    <p class="menu_item" style="font-size: 26px; text-align: center;">Сеня Удалова</p>
+    <p class="menu_item" style="font-size: 26px; text-align: center; cursor: pointer" onclick="selectFolder('');">Сеня Удалова</p>
 
-    <p class="menu_item" style="font-size: 16px; text-align: center;">Художник с фотоаппаратом</p>
+    <p class="menu_item" style="font-size: 16px; text-align: center; cursor: pointer" onclick="selectFolder('');">Художник с фотоаппаратом</p>
 
 
 
@@ -39,7 +39,7 @@
 
         <li><a href="#" style="font-size: 22px; "  class="off-canvas-submenu-call menu_item" >Портфолио <span class="right"> + </span></a></li>
         <ul class="off-canvas-submenu">
-            <li><a href="#" style="font-size: 22px; " class="menu_item" onclick="selectFolder();">Детки</a></li>
+            <li><a href="#" style="font-size: 22px; " class="menu_item" onclick="selectFolder('_kids');">Детки</a></li>
             <li><a href="#" style="font-size: 22px; " class="menu_item">Ню</a></li>
         </ul>
 
@@ -118,8 +118,8 @@ var lastTime = 0;
 var prevBodyStayle = 4;
 
 
-function selectFolder() {
-    folderSuffix = "_kids";
+function selectFolder(path) {
+    folderSuffix = path;
 prevBodyStayle = 4;
 
  body.style.backgroundImage = 'url(img_bg' + folderSuffix + '/' + 4 + '.jpg)';
@@ -185,9 +185,7 @@ function scrollDown(){
 
     		 prevBodyStayle = displayed_photo;
     		 body.style.backgroundImage = 'url(img_bg' + folderSuffix + '/' + displayed_photo + '.jpg)';
-
-
-    		 	$('#body_bg_div').fadeTo(250, 0.4, function()
+   		 	$('#body_bg_div').fadeTo(250, 0.4, function()
     {
 
     });
