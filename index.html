@@ -275,32 +275,26 @@ function scrollUp(){
 }
 
 
-$('body').on('mousewheel', function(event) {
+
+$('#photos').on('mousewheel', function(event) {
 
 
+    var d = new Date();
+    var n = d.getTime();
 
-var d = new Date();
-var n = d.getTime();
+    if((n - lastTime) > 500){
+        lastTime = n;
+            if(event.deltaY > 0){
+                scrollDown();
+             }
 
-if((n - lastTime) > 500){
-lastTime = n;
+              if(event.deltaY < 0){
+                 scrollUp();
 
-
-
-
-if(event.deltaY > 0){
-
-scrollDown();
-    }
-
-    if(event.deltaY < 0){
-    scrollUp();
-
-    }
-}
-
-
+              }
+        }
 });
+
 
 
 $(document).keydown(function(e){
