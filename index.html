@@ -12,6 +12,9 @@
     <link href='https://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic' rel='stylesheet'
           type='text/css'>
 
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+
     <title>Художник с фотоаппаратом Сеня Удалова</title>
 
 
@@ -25,31 +28,39 @@
 
 <div class="menu">
 
-    <p class="menu_item" style="font-size: 26px;">Сеня Удалова</p>
+    <p class="menu_item" style="font-size: 26px; text-align: center;">Сеня Удалова</p>
 
-    <p class="menu_item" style="font-size: 16px;">Художник с фотоаппаратом</p>
+    <p class="menu_item" style="font-size: 16px; text-align: center;">Художник с фотоаппаратом</p>
 
-    <p class="menu_item" style="position: relative; margin-top: 100px;"><a class="menu_item" style="font-size: 22px; "
-                                                                           href="google.com">Блог</a></p>
 
-    <p class="menu_item"><a class="menu_item" style="font-size: 22px; " href="google.com">Живопись</a></p>
 
-    <p class="menu_item"><a class="menu_item" style="font-size: 22px; " href="google.com">Портфолио</a></p>
+    <ul class="off-canvas-list">
+        <li><a href="#" style="font-size: 22px; " class="menu_item">Блог</a></li>
+        <li><a href="#" style="font-size: 22px; " class="menu_item">Живопись</a></li>
 
-    <table>
-        <tr>
-            <td>
-                <img src="1.png" style="height: 32px; width: 32px;"/>
-            </td>
-            <td>
-                <img src="2.png" style="height: 32px; width: 32px;"/>
-            </td>
-        </tr>
-    </table>
+        <li><a href="#" style="font-size: 22px; "  class="off-canvas-submenu-call menu_item" >Портфолио <span class="right"> + </span></a></li>
+        <ul class="off-canvas-submenu">
+            <li><a href="#" style="font-size: 22px; " class="menu_item">Детки</a></li>
+            <li><a href="#" style="font-size: 22px; " class="menu_item">Ню</a></li>
+        </ul>
 
-    <div class="style-1 clearfix" style="width: 80%; align: center; ">
-        <input type="text" placeholder="Поиск по номеру">
-    </div>
+
+    </ul>
+
+    <!--<table>-->
+        <!--<tr>-->
+            <!--<td>-->
+                <!--<img src="1.png" style="height: 32px; width: 32px;"/>-->
+            <!--</td>-->
+            <!--<td>-->
+                <!--<img src="2.png" style="height: 32px; width: 32px;"/>-->
+            <!--</td>-->
+        <!--</tr>-->
+    <!--</table>-->
+
+    <!--<div class="style-1 clearfix" style="width: 80%; align: center; ">-->
+        <!--<input type="text" placeholder="Поиск по номеру">-->
+    <!--</div>-->
 
 
 </div>
@@ -70,8 +81,17 @@
 <img src="img/7.jpg" alt="" class="box_1" onclick="clickDown();"/>
 <img src="img/1.jpg" alt="" class="box_7" onclick="clickDown();"/>
 
-
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
 <script>
+
+$(document).foundation();
+$(".off-canvas-submenu").hide();
+$(".off-canvas-submenu-call").click(function() {
+	var icon = $(this).parent().next(".off-canvas-submenu").is(':visible') ? '+' : '-';
+	$(this).parent().next(".off-canvas-submenu").slideToggle('fast');
+	$(this).find("span").text(icon);
+});
 
 
 var photo_count = 44;
