@@ -39,7 +39,7 @@
 
         <li><a href="#" style="font-size: 22px; "  class="off-canvas-submenu-call menu_item" >Портфолио <span class="right"> + </span></a></li>
         <ul class="off-canvas-submenu">
-            <li><a href="#" style="font-size: 22px; " class="menu_item">Детки</a></li>
+            <li><a href="#" style="font-size: 22px; " class="menu_item" onclick="selectFolder();">Детки</a></li>
             <li><a href="#" style="font-size: 22px; " class="menu_item">Ню</a></li>
         </ul>
 
@@ -95,7 +95,9 @@ $(".off-canvas-submenu-call").click(function() {
 });
 
 
+
 var photo_count = 44;
+var folderSuffix = "_kids";
 
 
 // disable scroll
@@ -116,27 +118,23 @@ var lastTime = 0;
 var prevBodyStayle = 4;
 
 
-function hideText() {
-			$('#text').fadeTo(250, 0, function()
-    {
+function selectFolder() {
+    folderSuffix = "_kids";
 
 
+ document.getElementsByClassName('box_1')[0].src="img" + folderSuffix + "/0.jpg";     // box_1, on top
+ document.getElementsByClassName('box_2')[0].src="img" + folderSuffix + "/1.jpg";     // box_1, on top
+ document.getElementsByClassName('box_3')[0].src="img" + folderSuffix + "/2.jpg";     // box_1, on top
+ document.getElementsByClassName('box_4')[0].src="img" + folderSuffix + "/3.jpg";     // box_1, on top
+ document.getElementsByClassName('box_5')[0].src="img" + folderSuffix + "/4.jpg";     // box_1, on top
+ document.getElementsByClassName('box_6')[0].src="img" + folderSuffix + "/5.jpg";     // box_1, on top
+ document.getElementsByClassName('box_7')[0].src="img" + folderSuffix + "/6.jpg";     // box_1, on top
 
-    });
-}
-
-function showText() {
-		$('#text').fadeTo(250, 0.8, function()
-    {
-
-
-
-    });
+ //clickDown();
 }
 
 function clickDown(){
 
-hideText();
 
 var d = new Date();
 var n = d.getTime();
@@ -173,10 +171,10 @@ function scrollDown(){
     box6.classList.add('box_' + ((count + 0 +  7)%7 + 1));
 
 
-    document.getElementsByClassName('box_1')[0].src="img/" + ((count_img + 8)%photo_count) + ".jpg";     // box_1, on top
+    document.getElementsByClassName('box_1')[0].src="img" + folderSuffix + "/" + ((count_img + 8)%photo_count) + ".jpg";     // box_1, on top
 
 
-var displayed_photo = ((count_img + 5)%photo_count);
+    var displayed_photo = ((count_img + 5)%photo_count);
 
 
 
@@ -228,7 +226,7 @@ function scrollUp(){
 
 
 
-    document.getElementsByClassName('box_7')[0].src="img/" + ((count_img)%photo_count)+".jpg";     // box_7, on top
+    document.getElementsByClassName('box_7')[0].src="img" + folderSuffix + "/" + ((count_img)%photo_count)+".jpg";     // box_7, on top
 
 
     var displayed_photo = ((count_img + 3)%photo_count);
@@ -257,7 +255,7 @@ function scrollUp(){
 
 $('body').on('mousewheel', function(event) {
 
-hideText();
+
 
 var d = new Date();
 var n = d.getTime();
